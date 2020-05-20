@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Finger+Paint|Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+<style>
+@font-face {
+    font-family: 'FontLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+/* Configurações de tags */
+
+section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30pt;
+    margin-bottom: 5%;
+}
+
+/* Configurações do cabeçalho*/
+
+img.logo {
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -70px;
+}
+
+img.logo_footer {
+    left: 20%;
+    margin-top: -100px;
+    margin-left: -100px;
+    position: absolute;
+    top: -12%;
+    width: 400px;
+    height: 400px;
+}
+
+
+
+#cabecalho {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+#cabecalho nav {
+    border-bottom: 1px solid #606060;
+}
+
+/* Banner */
+
+.mySCarousel .item>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Produto */
+
+
+/* Historia */
+/* #Historia div{
+    
+} */
+
+.box-historia {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    background-color: #9f2828;
+}
+
+/* Footer */
+#Footer {
+    background-color: #000000;
+    border: 9px solid #9f2828;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* Css dos carousels */
+/* Geral */
+.slick-prev {
+    left: 25px;
+    z-index: 99;
+}
+
+.slick-next {
+    right: 25px;
+    z-index: 9;
+}
+
+.carousel {
+    background-color: #000
+}
+
+/* Banner */
+#Banner .slick-track{
+    display: flex !important;
+}
+#Banner .slick-slide {
+    height: inherit !important;
+    outline: none;
+}
+
+/* Produtos */
+
+#Produtos .slick-produtos>.slick-prev:before,
+#Produtos .slick-produtos>.slick-next:before {
+    color: #606060;
+}
+
+#Produtos .slick-track {
+    display: flex !important;
+}
+
+#Produtos .slick-slide {
+    height: inherit !important;
+    outline: none;
+}
+
+#Produtos .slide {
+    position: relative;
+}
+
+#Produtos .slide__caption {
+    bottom: 0;
+    min-height: 80px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+#Produtos .slick-produtos img {
+    max-width: 120px;
+    margin: auto;
+    filter: opacity(50%);
+}
+
+#Produtos .slick-produtos .slick-center {
+    -moz-transform: scale(1.22);
+    -ms-transform: scale(1.22);
+    -o-transform: scale(1.22);
+    -webkit-transform: scale(1.22);
+    opacity: 1;
+    transform: scale(1.22);
+}
+
+#Produtos .slick-produtos .slick-center img {
+    filter: none;
+}
+
+#Produtos .slick-produtos-descricao p {
+    font-style: italic;
+    font-size: medium;
+}
+
+#Produtos .slick-list {
+    padding: 25px 60px !important;
+    margin-left: 30px !important;
+}
+</style>

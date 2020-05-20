@@ -1,0 +1,279 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Finger+Paint|Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@font-face {
+    font-family: 'FontLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+
+/*
+body {
+    background-color: #dddddd;
+    color: rgba(0, 0, 0, 1);
+}
+
+/* div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+*/
+
+
+/* Configurações do cabeçalho*/
+
+header#cabecalho img#logo {
+    position: absolute;
+    left: 490px;
+    top: -50px;
+    width: 230px;
+    height: 230px;
+}
+
+header#cabecalho {
+    width: 100%;
+    /*background-color: #F8F8FF;*/
+    padding: -10px;
+    border-bottom: 1px #606060 solid;
+    height: 50;
+    width: auto;
+    /*background: url("../_imagens/campo_fino.jpg") no-repeat 0px 0px;*/
+    /*background-size: 100%;*/
+}
+
+header#cabecalho h1 {
+    font-family: 'FontLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+
+/* Formatação do menu*/
+
+nav#menu {
+    width: 100%;
+    display: block;
+}
+
+nav#menu ul#direita {
+    list-style: none;
+    /*text-transform: uppercase;*/
+    position: absolute;
+    top: -20px;
+    left: 750px;
+}
+
+nav#menu ul#esquerda {
+    list-style: none;
+    /*text-transform: uppercase;*/
+    position: absolute;
+    top: -20px;
+    right: 850px;
+}
+
+nav#menu li {
+    font-family: 'Kaushan Script', cursive;
+    display: inline-block;
+    background: none;
+    padding: 25px 50px 25px 50px;
+    margin: 2px;
+    font-size: 18px;
+    /*transition: background-color 1s;*/
+}
+
+
+/*nav#menu li:hover {
+    opacity: 0.5;
+}*/
+
+nav#menu a:hover {
+    opacity: 0.8;
+    transition: 1s;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/*nav#menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}*/
+
+
+/*configuração banner*/
+
+img.banner {
+    width: 100%;
+}
+
+
+/* footer*/
+
+footer#rodape {
+    position: relative;
+    background-color: #A20909;
+    padding: -10px;
+    border-bottom: 1px #606060 solid;
+    border-top: 1px #606060 solid;
+    height: 150;
+    width: auto;
+    /*background: url("../_imagens/campo_fino.jpg") no-repeat 0px 0px;*/
+    /*background-size: 100%;*/
+    padding-bottom: -20px;
+    padding-top: -20px;
+}
+
+ul#social li {
+    display: inline-block;
+}
+
+ul#social {
+    padding-left: 500px;
+}
+
+h2#footer {
+    font-family: 'FontLogo', sans-serif;
+    padding-left: 480px;
+    text-transform: uppercase
+}
+
+img.icons {
+    padding-top: 15px;
+    max-width: 50px;
+    width: auto;
+    height: auto;
+}
+
+
+/* copyrigths*/
+
+div#copyrights {
+    padding: -50px;
+    background-color: black;
+    height: 30;
+    border-bottom: 1px #606060 solid;
+}
+
+#copyrights h2 {
+    padding-top: 10;
+    font-family: 'Bellefair', serif;
+    font-size: 15px;
+    color: white;
+    padding-left: 480px;
+}
+
+
+/*contato*/
+
+div#contato {}
+
+fieldset {
+    border: 0;
+}
+
+div#dados {
+    float: ;
+    padding-top: -200;
+    border: 1px #606060 solid;
+}
+
+img#logopreto {
+    position: absolute;
+    left: 440px;
+    top: 500px;
+    width: 300px;
+    height: 300px;
+}
+
+div#form {
+    border: #666 solid;
+    padding: 10px;
+}
+
+input,
+textarea,
+button {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #666;
+    display: block;
+}
+
+fieldset {
+    width: 370px;
+    margin-right: 0;
+    /*border: #606060 solid;*/
+    padding-right: 0;
+    padding-left: 850;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo textarea:focus {
+    background: #FFC;
+}
+
+.botao {
+    font-size: 1.5em;
+    background: #F90;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.botao:hover {
+    background: #FB0;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.botao,
+select,
+label.checkbox {
+    cursor: pointer;
+}

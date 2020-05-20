@@ -1,0 +1,38 @@
+<div id="cabecalho">
+	<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="nav-brand d-block d-sm-none" href="#">
+				{% load static %}
+				<img class="img-fluid logo" src="{% static "images/LOGO_PNG.png" %}" />
+			</a>
+	
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="col-sm-1"></div>
+			<ul class="navbar-nav nav col-sm-3 nav-fill justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link" href="#Banner">início</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Produtos">produtos</a>
+				</li>
+			</ul>
+			<a class="nav-brand col-sm-4" href="#">
+				{% load static %}
+				<img class=" img-fluid logo" src="{% static "images/LOGO_PNG.png" %}" />
+			</a>
+			<ul class="navbar-nav nav col-sm-3 nav-fill justify-content-start">
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#Historia">história</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Footer">contato</a>
+				</li>
+			</ul>
+			<div class="col-sm-1"></div>
+		</div>
+	</nav>
+</div>
